@@ -109,6 +109,7 @@
 		D8F9482E22F3BFCB00A23687 /* TestAppleRobertoG */ = {
 			isa = PBXGroup;
 			children = (
+				D8F9486D22F3C2E200A23687 /* Models */,
 				D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */,
 				D8F9483122F3BFCB00A23687 /* ViewController.swift */,
 				D8F9486822F3C11E00A23687 /* LogIn */,
@@ -160,11 +161,26 @@
 		D8F9486A22F3C12E00A23687 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
-				D8F9486022F3C0FD00A23687 /* MoviesTableViewCell.swift */,
-				D8F9486122F3C0FD00A23687 /* MoviesTableViewCell.xib */,
 				D8F9486B22F3C13B00A23687 /* MoviesViewController.swift */,
+				D8F9486E22F3C3B600A23687 /* Cell */,
 			);
 			name = Movies;
+			sourceTree = "<group>";
+		};
+		D8F9486D22F3C2E200A23687 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D8F9486E22F3C3B600A23687 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9486022F3C0FD00A23687 /* MoviesTableViewCell.swift */,
+				D8F9486122F3C0FD00A23687 /* MoviesTableViewCell.xib */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
