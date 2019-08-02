@@ -13,7 +13,10 @@ class JSONAdapter: NSObject {
     func jsonGetURL(completion: @escaping ([ManagerData]?) -> Void) {
         
         var arrayObjectAdapter : [ManagerData] = []
-        let urlApple = URL(string:"http://movil.aztecanoticias.com.mx/ultimas/ultnot.json")
+        let urlStr = "https://api.themoviedb.org/3/movie/popular?api_key=eb14b75c09535ee482a6af08c41cc63b&language=en-US&page=1&region=USA"
+        let urlApple = URL(string:urlStr)
+
+       // let urlApple = URL(string:"http://movil.aztecanoticias.com.mx/ultimas/ultnot.json")
         let task = URLSession.shared.dataTask(with: urlApple!) {(data, response, error) in
             
             if error != nil {
@@ -25,19 +28,31 @@ class JSONAdapter: NSObject {
                 do{
                     let rootJSONDictionary = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as AnyObject
                     
-                    if let items = rootJSONDictionary["items"] as? [[String: Any]]{
+                    if let items = rootJSONDictionary["results"] as? [[String: Any]]{
                      
-                        print("reading JSON")
-                        
                         for everyItems in items {
                         
-                            guard let fecha = everyItems["fecha"]  as! String? else {return}
-                            guard let titulo = everyItems["titulo"]  as! String? else {return}
-                            guard let imagen = everyItems["imagen"]  as! String? else {return}
-                            guard let autor = everyItems["autor"]  as! String? else {return}
-                            
-                            arrayObjectAdapter.append(ManagerData(titulo: titulo, noticia: autor, fecha: fecha, imagen: imagen))
-                        }// end for
+                            guard let rating = everyItems["vote_average"]  as! Int? else {return}
+                            guard let titulo = everyItems["title"]  as! String? else {return}
+                            guard let imagen = everyItems["poster_path"]  as! String? else {return}
+                            guard let language = everyItems["original_language"]  as! String? else {return}
+                        arrayObjectAdapter.append(ManagerData(titulo: titulo, language: language, rating: rating, imagen: imagen))
+                        }
+
+                        
+//                        print("reading JSON")
+//                        
+//                        for everyItems in items {
+//                        
+//                            guard let fecha = everyItems["fecha"]  as! String? else {return}
+//                            guard let titulo = everyItems["titulo"]  as! String? else {return}
+//                            guard let imagen = everyItems["imagen"]  as! String? else {return}
+//                            guard let autor = everyItems["autor"]  as! String? else {return}
+//                            
+//                            arrayObjectAdapter.append(ManagerData(titulo: titulo, noticia: autor, fecha: fecha, imagen: imagen))
+                        
+                        
+                       // }// end for
                         
                     }// end if
                     

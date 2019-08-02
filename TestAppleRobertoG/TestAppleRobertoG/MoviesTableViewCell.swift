@@ -15,7 +15,9 @@ class MoviesTableViewCell: UITableViewCell {
     
     @IBOutlet weak var labelCell: UILabel!
     
+    @IBOutlet weak var lenguageLabelCell: UILabel!
     
+    @IBOutlet weak var ratingLabelCell: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

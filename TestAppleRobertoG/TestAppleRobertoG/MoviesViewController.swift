@@ -74,13 +74,21 @@ extension MoviesViewController : UITableViewDelegate {
         let datosCelda = arrayObject[indexPath.row]
         
         newCell.labelCell.text = datosCelda.titulo
+        if datosCelda.language == "en" {
+            newCell.ratingLabelCell.text = "Language: English"
+        } else {
+            newCell.ratingLabelCell.text = "Language: Foreing"
+        }
+        newCell.lenguageLabelCell.text = "Rating:" + String(datosCelda.rating)
+
         
         // for image
         
         let urlString = datosCelda.imagen
+        let urlStringF = "https://image.tmdb.org/t/p/w500/" + datosCelda.imagen
         
         
-        let imgURL: URL = URL(string: urlString)!
+        let imgURL: URL = URL(string: urlStringF)!
         let request: URLRequest = URLRequest(url: imgURL)
         
         let session = URLSession.shared
@@ -111,7 +119,7 @@ extension MoviesViewController : UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 200
     }
     
 

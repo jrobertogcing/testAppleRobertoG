@@ -11,15 +11,15 @@ import UIKit
 class ManagerData: NSObject {
     
     var titulo: String
-    var noticia: String
-    var fecha: String
+    var language: String
+    var rating: Int
     var imagen: String
     
-    init(titulo:String, noticia:String, fecha:String, imagen: String) {
+    init(titulo:String, language:String, rating:Int, imagen: String) {
         
         self.titulo = titulo
-        self.noticia = noticia
-        self.fecha = fecha
+        self.language = language
+        self.rating = rating
         self.imagen = imagen
         
     }
@@ -27,11 +27,10 @@ class ManagerData: NSObject {
 }
 
 
-
 class DataManager: NSObject {
     
     var titulo: String = ""
-    var noticia: String = ""
+    var noticia: Int = 0
     var fecha: String = ""
     var imagen: String = ""
     
