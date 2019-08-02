@@ -14,25 +14,17 @@ class ManagerData: NSObject {
     var language: String
     var rating: Int
     var imagen: String
+    var overview: String
+
     
-    init(titulo:String, language:String, rating:Int, imagen: String) {
+    init(titulo:String, language:String, rating:Int, imagen: String, overview:String) {
         
         self.titulo = titulo
         self.language = language
         self.rating = rating
         self.imagen = imagen
-        
+        self.overview = overview
+
     }
-    
-}
-
-
-class DataManager: NSObject {
-    
-    var titulo: String = ""
-    var noticia: Int = 0
-    var fecha: String = ""
-    var imagen: String = ""
-    
     
 }

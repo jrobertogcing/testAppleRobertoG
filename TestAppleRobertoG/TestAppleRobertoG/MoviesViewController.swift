@@ -17,6 +17,8 @@ class MoviesViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Movies"
 
         // For custom Cell
         let nibName = UINib.init(nibName: "MoviesTableViewCell", bundle: Bundle.main)
@@ -54,7 +56,7 @@ class MoviesViewController: UIViewController{
 }
 
 // Extension
-extension MoviesViewController : UITableViewDelegate {
+extension MoviesViewController : UITableViewDelegate, UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -82,7 +84,7 @@ extension MoviesViewController : UITableViewDelegate {
         newCell.lenguageLabelCell.text = "Rating:" + String(datosCelda.rating)
 
         
-        // for image
+        //Show the image Using GCD image
         
         let urlString = datosCelda.imagen
         let urlStringF = "https://image.tmdb.org/t/p/w500/" + datosCelda.imagen
@@ -109,12 +111,7 @@ extension MoviesViewController : UITableViewDelegate {
         })
         
         task.resume()
-        
-        
-        
-        
         return newCell
-        
         
     }
     
@@ -123,11 +120,24 @@ extension MoviesViewController : UITableViewDelegate {
     }
     
 
-}
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        
+        let datosCelda = arrayObject[indexPath.row]
 
-extension MoviesViewController : UITableViewDataSource {
+            nextViewController.detail = datosCelda.overview
+            nextViewController.imageStr = datosCelda.imagen
+        
+        //self.user?.name = userTextField.text
+        
+        //nextViewController.user = self.user
+        
+        //        self.present(nextViewController, animated:true, completion:nil)
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+        
+    }
+
     
-    
 }
-
-

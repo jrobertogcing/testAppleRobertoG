@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D834028A22F3F7E3009505A7 /* JSONAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834028922F3F7E3009505A7 /* JSONAdapter.swift */; };
 		D834028C22F3F824009505A7 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834028B22F3F824009505A7 /* Manager.swift */; };
+		D834028E22F41438009505A7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834028D22F41438009505A7 /* DetailViewController.swift */; };
 		D8F9483022F3BFCB00A23687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */; };
 		D8F9483222F3BFCB00A23687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9483122F3BFCB00A23687 /* ViewController.swift */; };
 		D8F9483522F3BFCB00A23687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F9483322F3BFCB00A23687 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 /* Begin PBXFileReference section */
 		D834028922F3F7E3009505A7 /* JSONAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONAdapter.swift; sourceTree = "<group>"; };
 		D834028B22F3F824009505A7 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		D834028D22F41438009505A7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D8F9482C22F3BFCB00A23687 /* TestAppleRobertoG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppleRobertoG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F9483122F3BFCB00A23687 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				D8F9486B22F3C13B00A23687 /* MoviesViewController.swift */,
 				D8F9486E22F3C3B600A23687 /* Cell */,
+				D834028D22F41438009505A7 /* DetailViewController.swift */,
 			);
 			name = Movies;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				D8F9483022F3BFCB00A23687 /* AppDelegate.swift in Sources */,
 				D8F9486C22F3C13B00A23687 /* MoviesViewController.swift in Sources */,
 				D8F9486722F3C11900A23687 /* HomeViewController.swift in Sources */,
+				D834028E22F41438009505A7 /* DetailViewController.swift in Sources */,
 				D834028C22F3F824009505A7 /* Manager.swift in Sources */,
 				D834028A22F3F7E3009505A7 /* JSONAdapter.swift in Sources */,
 			);
