@@ -8,27 +8,40 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MoviesViewController: UIViewController{
 
     @IBOutlet weak var moviesTableView: UITableView!
     
-    
-    var arr = [String]()
+    var arrayObject : [ManagerData] = []
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        arr = ["Uno", "Dos", "Tres", "Cuatro"]
-        
+        // For custom Cell
         let nibName = UINib.init(nibName: "MoviesTableViewCell", bundle: Bundle.main)
-        
         moviesTableView.register(nibName, forCellReuseIdentifier: "MoviesTableViewCell")
         
-        
+        // Delegate and Data Sourse for Table View
         moviesTableView.delegate = self
         moviesTableView.dataSource = self
-
+        
+        // Parcing data JSON
+        let JSONAdpaterCall = JSONAdapter()
+        
+        JSONAdpaterCall.jsonGetURL(){
+            
+            list in
+            
+            if list != nil {
+                self.arrayObject = list!
+            }
+            // GCD in main thread
+            DispatchQueue.main.async {
+                self.moviesTableView.reloadData()
+            }
+            
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,14 +49,20 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+}
+
+// Extension
+extension MoviesViewController : UITableViewDelegate {
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return arr.count
-        //return productos.count
+        return arrayObject.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,13 +71,39 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         guard let newCell = cell as? MoviesTableViewCell else {return cell}
         
-        newCell.labelCell.text = arr[indexPath.row]
+        let datosCelda = arrayObject[indexPath.row]
         
-//        //        newCell.nombreLabelCell.text = arr[indexPath.row]
-//        let items = productos[indexPath.row]
-//        newCell.nombreLabelCell.text = items.titulo
-//        newCell.noticiaLabelCell.text = items.noticia
-//        newCell.fechaLabelCell.text = items.noticia
+        newCell.labelCell.text = datosCelda.titulo
+        
+        // for image
+        
+        let urlString = datosCelda.imagen
+        
+        
+        let imgURL: URL = URL(string: urlString)!
+        let request: URLRequest = URLRequest(url: imgURL)
+        
+        let session = URLSession.shared
+        let task = session.dataTask(with: request, completionHandler: {
+            (data, response, error) -> Void in
+            
+            if (error == nil && data != nil)
+            {
+                func display_image()
+                {
+                    newCell.imageCell.image = UIImage(data: data!)
+                    
+                }
+                // GCD in main thread
+                DispatchQueue.main.async(execute: display_image)
+            }
+            
+        })
+        
+        task.resume()
+        
+        
+        
         
         return newCell
         
@@ -69,5 +114,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         return 100
     }
     
+
+}
+
+extension MoviesViewController : UITableViewDataSource {
+    
     
 }
+
+

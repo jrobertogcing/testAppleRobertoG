@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D834028A22F3F7E3009505A7 /* JSONAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834028922F3F7E3009505A7 /* JSONAdapter.swift */; };
+		D834028C22F3F824009505A7 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D834028B22F3F824009505A7 /* Manager.swift */; };
 		D8F9483022F3BFCB00A23687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */; };
 		D8F9483222F3BFCB00A23687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9483122F3BFCB00A23687 /* ViewController.swift */; };
 		D8F9483522F3BFCB00A23687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F9483322F3BFCB00A23687 /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D834028922F3F7E3009505A7 /* JSONAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONAdapter.swift; sourceTree = "<group>"; };
+		D834028B22F3F824009505A7 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		D8F9482C22F3BFCB00A23687 /* TestAppleRobertoG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppleRobertoG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F9483122F3BFCB00A23687 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D834028822F3F7BF009505A7 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				D834028922F3F7E3009505A7 /* JSONAdapter.swift */,
+			);
+			name = Adapters;
+			sourceTree = "<group>";
+		};
 		D8F9482322F3BFCB00A23687 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +121,7 @@
 		D8F9482E22F3BFCB00A23687 /* TestAppleRobertoG */ = {
 			isa = PBXGroup;
 			children = (
+				D834028822F3F7BF009505A7 /* Adapters */,
 				D8F9486D22F3C2E200A23687 /* Models */,
 				D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */,
 				D8F9483122F3BFCB00A23687 /* ViewController.swift */,
@@ -170,6 +183,7 @@
 		D8F9486D22F3C2E200A23687 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D834028B22F3F824009505A7 /* Manager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -325,6 +339,8 @@
 				D8F9483022F3BFCB00A23687 /* AppDelegate.swift in Sources */,
 				D8F9486C22F3C13B00A23687 /* MoviesViewController.swift in Sources */,
 				D8F9486722F3C11900A23687 /* HomeViewController.swift in Sources */,
+				D834028C22F3F824009505A7 /* Manager.swift in Sources */,
+				D834028A22F3F7E3009505A7 /* JSONAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,13 @@ class MoviesTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+    }
+    //PREPARE FOR REUSE CELL
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        imageCell?.image = nil
+        labelCell.text = ""
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
