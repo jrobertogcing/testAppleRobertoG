@@ -130,11 +130,6 @@ extension MoviesViewController : UITableViewDelegate, UITableViewDataSource {
             nextViewController.detail = datosCelda.overview
             nextViewController.imageStr = datosCelda.imagen
         
-        //self.user?.name = userTextField.text
-        
-        //nextViewController.user = self.user
-        
-        //        self.present(nextViewController, animated:true, completion:nil)
         self.navigationController?.pushViewController(nextViewController, animated: true)
         
     }

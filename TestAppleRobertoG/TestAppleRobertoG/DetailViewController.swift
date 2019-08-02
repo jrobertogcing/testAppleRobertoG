@@ -29,19 +29,12 @@ class DetailViewController: UIViewController, DetailsProtocol {
         super.viewDidLoad()
         
         self.navigationItem.title = "Detail"
-
-        
         if let detailStr = detail {
-        
             detailTextView.text = detailStr
-        
         }
-        
         if let image = imageStr {
             showImage(image: image)
         }
-        
-
     }
     
     func showImage(image:String){
@@ -69,7 +62,6 @@ class DetailViewController: UIViewController, DetailsProtocol {
         })
         
         task.resume()
-    
     }
 
     override func didReceiveMemoryWarning() {
