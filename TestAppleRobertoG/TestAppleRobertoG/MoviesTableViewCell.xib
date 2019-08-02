@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,18 +19,28 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opB-bL-gVL">
-                        <rect key="frame" x="104" y="39" width="208" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opB-bL-gVL">
+                        <rect key="frame" x="96" y="39" width="211" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqy-Iw-DP2">
-                        <rect key="frame" x="8" y="9" width="80" height="80"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="rqy-Iw-DP2">
+                        <rect key="frame" x="13" y="13" width="75" height="73.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="lfV-Gn-gRi"/>
+                        </constraints>
                     </imageView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="rqy-Iw-DP2" secondAttribute="bottom" constant="5" id="1sL-Ix-0d3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="opB-bL-gVL" secondAttribute="trailing" constant="5" id="CfE-yL-8rw"/>
+                    <constraint firstItem="opB-bL-gVL" firstAttribute="leading" secondItem="rqy-Iw-DP2" secondAttribute="trailing" constant="8" id="I8p-wV-ttq"/>
+                    <constraint firstItem="opB-bL-gVL" firstAttribute="centerY" secondItem="rqy-Iw-DP2" secondAttribute="centerY" id="QJy-DG-InT"/>
+                    <constraint firstItem="rqy-Iw-DP2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ayx-tO-8dS"/>
+                    <constraint firstItem="rqy-Iw-DP2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="iAR-y4-Kby"/>
+                    <constraint firstItem="rqy-Iw-DP2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="qmt-2Y-Q2c"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="imageCell" destination="rqy-Iw-DP2" id="DOj-Ie-dKH"/>
@@ -37,4 +48,7 @@
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="logo" width="522" height="522"/>
+    </resources>
 </document>
