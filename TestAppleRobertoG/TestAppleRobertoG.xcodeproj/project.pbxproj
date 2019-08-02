@@ -15,6 +15,11 @@
 		D8F9483D22F3BFCB00A23687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F9483B22F3BFCB00A23687 /* LaunchScreen.storyboard */; };
 		D8F9484822F3BFCB00A23687 /* TestAppleRobertoGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9484722F3BFCB00A23687 /* TestAppleRobertoGTests.swift */; };
 		D8F9485322F3BFCB00A23687 /* TestAppleRobertoGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9485222F3BFCB00A23687 /* TestAppleRobertoGUITests.swift */; };
+		D8F9486222F3C0FD00A23687 /* MoviesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9486022F3C0FD00A23687 /* MoviesTableViewCell.swift */; };
+		D8F9486322F3C0FD00A23687 /* MoviesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8F9486122F3C0FD00A23687 /* MoviesTableViewCell.xib */; };
+		D8F9486522F3C10D00A23687 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9486422F3C10D00A23687 /* LogInViewController.swift */; };
+		D8F9486722F3C11900A23687 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9486622F3C11900A23687 /* HomeViewController.swift */; };
+		D8F9486C22F3C13B00A23687 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9486B22F3C13B00A23687 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		D8F9484E22F3BFCB00A23687 /* TestAppleRobertoGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppleRobertoGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F9485222F3BFCB00A23687 /* TestAppleRobertoGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppleRobertoGUITests.swift; sourceTree = "<group>"; };
 		D8F9485422F3BFCB00A23687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F9486022F3C0FD00A23687 /* MoviesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesTableViewCell.swift; sourceTree = "<group>"; };
+		D8F9486122F3C0FD00A23687 /* MoviesTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesTableViewCell.xib; sourceTree = "<group>"; };
+		D8F9486422F3C10D00A23687 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D8F9486622F3C11900A23687 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D8F9486B22F3C13B00A23687 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,9 @@
 			children = (
 				D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */,
 				D8F9483122F3BFCB00A23687 /* ViewController.swift */,
+				D8F9486822F3C11E00A23687 /* LogIn */,
+				D8F9486922F3C12300A23687 /* Home */,
+				D8F9486A22F3C12E00A23687 /* Movies */,
 				D8F9483322F3BFCB00A23687 /* Main.storyboard */,
 				D8F9483922F3BFCB00A23687 /* Assets.xcassets */,
 				D8F9483B22F3BFCB00A23687 /* LaunchScreen.storyboard */,
@@ -126,6 +139,32 @@
 				D8F9485422F3BFCB00A23687 /* Info.plist */,
 			);
 			path = TestAppleRobertoGUITests;
+			sourceTree = "<group>";
+		};
+		D8F9486822F3C11E00A23687 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9486422F3C10D00A23687 /* LogInViewController.swift */,
+			);
+			name = LogIn;
+			sourceTree = "<group>";
+		};
+		D8F9486922F3C12300A23687 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9486622F3C11900A23687 /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		D8F9486A22F3C12E00A23687 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9486022F3C0FD00A23687 /* MoviesTableViewCell.swift */,
+				D8F9486122F3C0FD00A23687 /* MoviesTableViewCell.xib */,
+				D8F9486B22F3C13B00A23687 /* MoviesViewController.swift */,
+			);
+			name = Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +276,7 @@
 			files = (
 				D8F9483D22F3BFCB00A23687 /* LaunchScreen.storyboard in Resources */,
 				D8F9483A22F3BFCB00A23687 /* Assets.xcassets in Resources */,
+				D8F9486322F3C0FD00A23687 /* MoviesTableViewCell.xib in Resources */,
 				D8F9483522F3BFCB00A23687 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +304,11 @@
 			files = (
 				D8F9483822F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodeld in Sources */,
 				D8F9483222F3BFCB00A23687 /* ViewController.swift in Sources */,
+				D8F9486222F3C0FD00A23687 /* MoviesTableViewCell.swift in Sources */,
+				D8F9486522F3C10D00A23687 /* LogInViewController.swift in Sources */,
 				D8F9483022F3BFCB00A23687 /* AppDelegate.swift in Sources */,
+				D8F9486C22F3C13B00A23687 /* MoviesViewController.swift in Sources */,
+				D8F9486722F3C11900A23687 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +553,7 @@
 				D8F9485922F3BFCB00A23687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F9485A22F3BFCB00A23687 /* Build configuration list for PBXNativeTarget "TestAppleRobertoGTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +562,7 @@
 				D8F9485C22F3BFCB00A23687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D8F9485D22F3BFCB00A23687 /* Build configuration list for PBXNativeTarget "TestAppleRobertoGUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +571,7 @@
 				D8F9485F22F3BFCB00A23687 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
