@@ -36,6 +36,11 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         passwordTextField.text = ""
     }
@@ -56,7 +61,9 @@ class LogInViewController: UIViewController, UITextFieldDelegate {
                     if self.user?.password == password {
                         
                         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-                        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MoviesViewController") as! MoviesViewController
+                        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+                        
+                            nextViewController.user = self.user
                         
                         self.navigationController?.pushViewController(nextViewController, animated: true)
 
