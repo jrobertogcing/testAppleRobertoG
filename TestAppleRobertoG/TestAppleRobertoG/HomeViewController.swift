@@ -58,6 +58,13 @@ class HomeViewController: UIViewController {
     }
     
     
+    @IBAction func SignOutButtonAction(_ sender: UIButton) {
+        
+        _ = navigationController?.popViewController(animated: false)
+        
+    }
+    
+    
     @IBAction func sideMenuButtonAction(_ sender: UIButton) {
         
         if menuShowing {
