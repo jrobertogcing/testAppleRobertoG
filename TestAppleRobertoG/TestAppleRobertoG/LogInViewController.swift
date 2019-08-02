@@ -8,12 +8,19 @@
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var userTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        userTextField.delegate = self
+        passwordTextField.delegate = self
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,13 +34,13 @@ class LogInViewController: UIViewController {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MoviesViewController") as! MoviesViewController
         
-        //self.user?.name = userTextField.text
-        
-        //nextViewController.user = self.user
-        
-        //        self.present(nextViewController, animated:true, completion:nil)
         self.navigationController?.pushViewController(nextViewController, animated: true)
         
+    }
+    
+    func textFieldShouldReturn(_ scoreText: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
 }
