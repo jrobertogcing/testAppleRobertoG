@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8F9483022F3BFCB00A23687 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */; };
+		D8F9483222F3BFCB00A23687 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9483122F3BFCB00A23687 /* ViewController.swift */; };
+		D8F9483522F3BFCB00A23687 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F9483322F3BFCB00A23687 /* Main.storyboard */; };
+		D8F9483822F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8F9483622F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodeld */; };
+		D8F9483A22F3BFCB00A23687 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F9483922F3BFCB00A23687 /* Assets.xcassets */; };
+		D8F9483D22F3BFCB00A23687 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F9483B22F3BFCB00A23687 /* LaunchScreen.storyboard */; };
+		D8F9484822F3BFCB00A23687 /* TestAppleRobertoGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9484722F3BFCB00A23687 /* TestAppleRobertoGTests.swift */; };
+		D8F9485322F3BFCB00A23687 /* TestAppleRobertoGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F9485222F3BFCB00A23687 /* TestAppleRobertoGUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8F9484422F3BFCB00A23687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8F9482422F3BFCB00A23687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8F9482B22F3BFCB00A23687;
+			remoteInfo = TestAppleRobertoG;
+		};
+		D8F9484F22F3BFCB00A23687 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8F9482422F3BFCB00A23687 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8F9482B22F3BFCB00A23687;
+			remoteInfo = TestAppleRobertoG;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D8F9482C22F3BFCB00A23687 /* TestAppleRobertoG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestAppleRobertoG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8F9483122F3BFCB00A23687 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8F9483422F3BFCB00A23687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8F9483722F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestAppleRobertoG.xcdatamodel; sourceTree = "<group>"; };
+		D8F9483922F3BFCB00A23687 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8F9483C22F3BFCB00A23687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8F9483E22F3BFCB00A23687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F9484322F3BFCB00A23687 /* TestAppleRobertoGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppleRobertoGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F9484722F3BFCB00A23687 /* TestAppleRobertoGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppleRobertoGTests.swift; sourceTree = "<group>"; };
+		D8F9484922F3BFCB00A23687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F9484E22F3BFCB00A23687 /* TestAppleRobertoGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppleRobertoGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F9485222F3BFCB00A23687 /* TestAppleRobertoGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppleRobertoGUITests.swift; sourceTree = "<group>"; };
+		D8F9485422F3BFCB00A23687 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8F9482922F3BFCB00A23687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F9484022F3BFCB00A23687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F9484B22F3BFCB00A23687 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8F9482322F3BFCB00A23687 = {
+			isa = PBXGroup;
+			children = (
+				D8F9482E22F3BFCB00A23687 /* TestAppleRobertoG */,
+				D8F9484622F3BFCB00A23687 /* TestAppleRobertoGTests */,
+				D8F9485122F3BFCB00A23687 /* TestAppleRobertoGUITests */,
+				D8F9482D22F3BFCB00A23687 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8F9482D22F3BFCB00A23687 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9482C22F3BFCB00A23687 /* TestAppleRobertoG.app */,
+				D8F9484322F3BFCB00A23687 /* TestAppleRobertoGTests.xctest */,
+				D8F9484E22F3BFCB00A23687 /* TestAppleRobertoGUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8F9482E22F3BFCB00A23687 /* TestAppleRobertoG */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9482F22F3BFCB00A23687 /* AppDelegate.swift */,
+				D8F9483122F3BFCB00A23687 /* ViewController.swift */,
+				D8F9483322F3BFCB00A23687 /* Main.storyboard */,
+				D8F9483922F3BFCB00A23687 /* Assets.xcassets */,
+				D8F9483B22F3BFCB00A23687 /* LaunchScreen.storyboard */,
+				D8F9483E22F3BFCB00A23687 /* Info.plist */,
+				D8F9483622F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodeld */,
+			);
+			path = TestAppleRobertoG;
+			sourceTree = "<group>";
+		};
+		D8F9484622F3BFCB00A23687 /* TestAppleRobertoGTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9484722F3BFCB00A23687 /* TestAppleRobertoGTests.swift */,
+				D8F9484922F3BFCB00A23687 /* Info.plist */,
+			);
+			path = TestAppleRobertoGTests;
+			sourceTree = "<group>";
+		};
+		D8F9485122F3BFCB00A23687 /* TestAppleRobertoGUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8F9485222F3BFCB00A23687 /* TestAppleRobertoGUITests.swift */,
+				D8F9485422F3BFCB00A23687 /* Info.plist */,
+			);
+			path = TestAppleRobertoGUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8F9482B22F3BFCB00A23687 /* TestAppleRobertoG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8F9485722F3BFCB00A23687 /* Build configuration list for PBXNativeTarget "TestAppleRobertoG" */;
+			buildPhases = (
+				D8F9482822F3BFCB00A23687 /* Sources */,
+				D8F9482922F3BFCB00A23687 /* Frameworks */,
+				D8F9482A22F3BFCB00A23687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestAppleRobertoG;
+			productName = TestAppleRobertoG;
+			productReference = D8F9482C22F3BFCB00A23687 /* TestAppleRobertoG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8F9484222F3BFCB00A23687 /* TestAppleRobertoGTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8F9485A22F3BFCB00A23687 /* Build configuration list for PBXNativeTarget "TestAppleRobertoGTests" */;
+			buildPhases = (
+				D8F9483F22F3BFCB00A23687 /* Sources */,
+				D8F9484022F3BFCB00A23687 /* Frameworks */,
+				D8F9484122F3BFCB00A23687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8F9484522F3BFCB00A23687 /* PBXTargetDependency */,
+			);
+			name = TestAppleRobertoGTests;
+			productName = TestAppleRobertoGTests;
+			productReference = D8F9484322F3BFCB00A23687 /* TestAppleRobertoGTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8F9484D22F3BFCB00A23687 /* TestAppleRobertoGUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8F9485D22F3BFCB00A23687 /* Build configuration list for PBXNativeTarget "TestAppleRobertoGUITests" */;
+			buildPhases = (
+				D8F9484A22F3BFCB00A23687 /* Sources */,
+				D8F9484B22F3BFCB00A23687 /* Frameworks */,
+				D8F9484C22F3BFCB00A23687 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8F9485022F3BFCB00A23687 /* PBXTargetDependency */,
+			);
+			name = TestAppleRobertoGUITests;
+			productName = TestAppleRobertoGUITests;
+			productReference = D8F9484E22F3BFCB00A23687 /* TestAppleRobertoGUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8F9482422F3BFCB00A23687 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Roberto Gonzalez C.";
+				TargetAttributes = {
+					D8F9482B22F3BFCB00A23687 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					D8F9484222F3BFCB00A23687 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8F9482B22F3BFCB00A23687;
+					};
+					D8F9484D22F3BFCB00A23687 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D8F9482B22F3BFCB00A23687;
+					};
+				};
+			};
+			buildConfigurationList = D8F9482722F3BFCB00A23687 /* Build configuration list for PBXProject "TestAppleRobertoG" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8F9482322F3BFCB00A23687;
+			productRefGroup = D8F9482D22F3BFCB00A23687 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8F9482B22F3BFCB00A23687 /* TestAppleRobertoG */,
+				D8F9484222F3BFCB00A23687 /* TestAppleRobertoGTests */,
+				D8F9484D22F3BFCB00A23687 /* TestAppleRobertoGUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8F9482A22F3BFCB00A23687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F9483D22F3BFCB00A23687 /* LaunchScreen.storyboard in Resources */,
+				D8F9483A22F3BFCB00A23687 /* Assets.xcassets in Resources */,
+				D8F9483522F3BFCB00A23687 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F9484122F3BFCB00A23687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F9484C22F3BFCB00A23687 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8F9482822F3BFCB00A23687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F9483822F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodeld in Sources */,
+				D8F9483222F3BFCB00A23687 /* ViewController.swift in Sources */,
+				D8F9483022F3BFCB00A23687 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F9483F22F3BFCB00A23687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F9484822F3BFCB00A23687 /* TestAppleRobertoGTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8F9484A22F3BFCB00A23687 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F9485322F3BFCB00A23687 /* TestAppleRobertoGUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8F9484522F3BFCB00A23687 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8F9482B22F3BFCB00A23687 /* TestAppleRobertoG */;
+			targetProxy = D8F9484422F3BFCB00A23687 /* PBXContainerItemProxy */;
+		};
+		D8F9485022F3BFCB00A23687 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8F9482B22F3BFCB00A23687 /* TestAppleRobertoG */;
+			targetProxy = D8F9484F22F3BFCB00A23687 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8F9483322F3BFCB00A23687 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8F9483422F3BFCB00A23687 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8F9483B22F3BFCB00A23687 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8F9483C22F3BFCB00A23687 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8F9485522F3BFCB00A23687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8F9485622F3BFCB00A23687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8F9485822F3BFCB00A23687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestAppleRobertoG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roberto-Gonzalez-C..TestAppleRobertoG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D8F9485922F3BFCB00A23687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestAppleRobertoG/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roberto-Gonzalez-C..TestAppleRobertoG";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D8F9485B22F3BFCB00A23687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestAppleRobertoGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roberto-Gonzalez-C..TestAppleRobertoGTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestAppleRobertoG.app/TestAppleRobertoG";
+			};
+			name = Debug;
+		};
+		D8F9485C22F3BFCB00A23687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestAppleRobertoGTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roberto-Gonzalez-C..TestAppleRobertoGTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestAppleRobertoG.app/TestAppleRobertoG";
+			};
+			name = Release;
+		};
+		D8F9485E22F3BFCB00A23687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TestAppleRobertoGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roberto-Gonzalez-C..TestAppleRobertoGUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TestAppleRobertoG;
+			};
+			name = Debug;
+		};
+		D8F9485F22F3BFCB00A23687 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = TestAppleRobertoGUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Roberto-Gonzalez-C..TestAppleRobertoGUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TestAppleRobertoG;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8F9482722F3BFCB00A23687 /* Build configuration list for PBXProject "TestAppleRobertoG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F9485522F3BFCB00A23687 /* Debug */,
+				D8F9485622F3BFCB00A23687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8F9485722F3BFCB00A23687 /* Build configuration list for PBXNativeTarget "TestAppleRobertoG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F9485822F3BFCB00A23687 /* Debug */,
+				D8F9485922F3BFCB00A23687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8F9485A22F3BFCB00A23687 /* Build configuration list for PBXNativeTarget "TestAppleRobertoGTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F9485B22F3BFCB00A23687 /* Debug */,
+				D8F9485C22F3BFCB00A23687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D8F9485D22F3BFCB00A23687 /* Build configuration list for PBXNativeTarget "TestAppleRobertoGUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8F9485E22F3BFCB00A23687 /* Debug */,
+				D8F9485F22F3BFCB00A23687 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8F9483622F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8F9483722F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodel */,
+			);
+			currentVersion = D8F9483722F3BFCB00A23687 /* TestAppleRobertoG.xcdatamodel */;
+			path = TestAppleRobertoG.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D8F9482422F3BFCB00A23687 /* Project object */;
+}
